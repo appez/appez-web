@@ -1,0 +1,350 @@
+appez.mmi.constant = {
+		//LOG LEVELS
+		LOG_LEVEL_ERROR : 1,
+		LOG_LEVEL_DEBUG : 2,
+		LOG_LEVEL_INFO : 3,
+		
+		//Service class names
+		SERVICE_APP_EVENT : 'AppEventService',
+		SERVICE_CAMERA : 'CameraService',
+		SERVICE_CO_EVENT : 'CoEventService',
+		SERVICE_DATABASE : 'DatabaseService',
+		SERVICE_FILE : 'FileService',
+		SERVICE_HTTP : 'HttpService',
+		SERVICE_MAP : 'MapService',
+		SERVICE_PERSISTENCE : 'PersistenceService',
+		SERVICE_UI : 'UIService',
+		SERVICE_LOCATION : 'LocationService',
+		SERVICE_SIGNATURE : 'SignatureService',
+		
+										//SERVICE CONSTANTS
+		// UI Service constants
+		WEB_SHOW_ACTIVITY_INDICATOR : 10101,
+		WEB_HIDE_ACTIVITY_INDICATOR : 10102,
+		WEB_UPDATE_LOADING_MESSAGE : 10103,
+		WEB_SHOW_DATE_PICKER : 10104,
+		WEB_SHOW_MESSAGE : 10105,
+		WEB_SHOW_MESSAGE_YESNO : 10106,
+		WEB_SHOW_INDICATOR : 10107,
+		WEB_HIDE_INDICATOR : 10108,
+		WEB_SHOW_DIALOG_SINGLE_CHOICE_LIST : 10109,
+		WEB_SHOW_DIALOG_SINGLE_CHOICE_LIST_RADIO_BTN : 10110,
+		WEB_SHOW_DIALOG_MULTIPLE_CHOICE_LIST_CHECKBOXES : 10111,
+		
+		// HTTP Service constants
+		WEB_HTTP_REQUEST : 10201,
+		WEB_HTTP_REQUEST_SAVE_DATA : 10202,
+		
+		// Data Persistence service constants
+		WEB_SAVE_DATA_PERSISTENCE : 10401,
+		WEB_RETRIEVE_DATA_PERSISTENCE : 10402,
+		WEB_DELETE_DATA_PERSISTENCE : 10403,
+		WEB_CLOSE_DATABASE : 10504,
+		
+		// DB Service constants
+		WEB_OPEN_DATABASE : 10501,
+		WEB_EXECUTE_DB_QUERY : 10502,
+		WEB_EXECUTE_DB_READ_QUERY : 10503,
+		
+		//File Reading service constants
+		WEB_READ_FILE_CONTENTS : 10801,
+		WEB_READ_FOLDER_CONTENTS : 10802,
+		WEB_UNZIP_FILE_CONTENTS : 10803,
+		WEB_ZIP_CONTENTS : 10804,
+		
+		//Camera service constants
+		WEB_CAMERA_OPEN : 10901,
+		WEB_IMAGE_GALLERY_OPEN : 10902,
+		
+		//Location service constants
+		WEB_USER_CURRENT_LOCATION : 11001,
+		//-------------------------------------
+		
+		//Signature service constants
+		WEB_SIGNATURE_SAVE_IMAGE : 11201,
+		WEB_SIGNATURE_IMAGE_DATA : 11202,
+		//-------------------------------
+		
+		//Context service constants
+		CONTEXT_CHANGE : 20601,
+		CONTEXT_WEBVIEW_SHOW : 20602,
+		CONTEXT_WEBVIEW_HIDE : 20603,
+		
+		//Map service constants
+		MAPVIEW_SHOW : 20701,
+		MAPVIEW_SHOW_WITH_DIRECTIONS : 20702,
+		MAPVIEW_SHOW_WITH_ANIMATION : 20703,
+
+		//App event constant
+		APP_DEFAULT_ACTION : 30001,
+		APP_NOTIFY_EXIT : 30002,
+		APP_NOTIFY_MENU_ACTION : 30003,
+		APP_NOTIFY_DATA_ACTION : 30004,
+		APP_NOTIFY_ACTIVITY_ACTION : 30005,
+		APP_CONTROL_TRANSFER : 30006,
+		APP_NOTIFY_CREATE_TABS : 30007,
+		APP_NOTIFY_CREATE_MENU : 30008,
+		APP_MANAGE_STARTUP : 30009,
+		APP_NOTIFY_OPEN_BROWSER : 30010,
+		
+		//NOTIFIER CONSTANTS
+		NETWORK_STATE_NOTIFIER : 1002,
+		
+		NOTIFIER_ACTION_REGISTER : 1,
+		NOTIFIER_ACTION_UNREGISTER : 2,
+		//---------------------------
+		
+		//Native event constants
+		NATIVE_EVENT_BACK_PRESSED : 0,
+		NATIVE_EVENT_PAGE_INIT_NOTIFICATION : 1,
+		NATIVE_EVENT_ENTER_PRESSED : 2,
+		NATIVE_EVENT_ACTIONBAR_UP_PRESSED : 3,
+		NATIVE_EVENT_SOFT_KB_SHOW : 4,
+		NATIVE_EVENT_SOFT_KB_HIDE : 5,
+		//-----------------------------------------
+		
+		RETRIEVE_ALL_FROM_PERSISTENCE : "*",
+		
+		//Default timeout for location requests. Currently 2 minutes.
+		LOCATION_SERVICE_DEFAULT_TIMEOUT : 2*60*1000,
+		
+		//EXCEPTION TYPES AND MESSAGES
+		UNKNOWN_EXCEPTION : -1,
+		SERVICE_TYPE_NOT_SUPPORTED_EXCEPTION : -2,
+		SMART_APP_LISTENER_NOT_FOUND_EXCEPTION : -3,
+		SMART_CONNECTOR_LISTENER_NOT_FOUND_EXCEPTION : -4,
+		INVALID_PAGE_URI_EXCEPTION : -5,
+		INVALID_PROTOCOL_EXCEPTION : -6,
+		INVALID_ACTION_CODE_PARAMETER : -7,
+		ACTION_CODE_NUMBER_FORMAT_EXCEPTION : -8,
+		IO_EXCEPTION : -9,
+		HTTP_PROCESSING_EXCEPTION : -10,
+		NETWORK_NOT_REACHABLE_EXCEPTION : -11,
+		FILE_NOT_FOUND_EXCEPTION : -12,
+		MALFORMED_URL_EXCEPTION : -13,
+		PROTOCOL_EXCEPTION : -14,
+		UNSUPPORTED_ENCODING_EXCEPTION : -15,
+		SOCKET_EXCEPTION_REQUEST_TIMED_OUT : -16,
+		ERROR_SAVE_DATA_PERSISTENCE : -17,
+		ERROR_RETRIEVE_DATA_PERSISTENCE : -18,
+		ERROR_DELETE_DATA_PERSISTENCE : -19,
+		JSON_PARSE_EXCEPTION : -20,
+		UNKNOWN_CURRENT_LOCATION_EXCEPTION : -21,
+		DB_OPERATION_ERROR : -22,
+		SOCKET_EXCEPTION : -23,
+		UNKNOWN_NETWORK_EXCEPTION : -24,
+		DEVICE_SUPPORT_EXCEPTION : -25,
+		FILE_READ_EXCEPTION : -26,
+		EXTERNAL_SD_CARD_NOT_AVAILABLE_EXCEPTION : -27,
+		PROBLEM_SAVING_IMAGE_TO_EXTERNAL_STORAGE_EXCEPTION : -28,
+		PROBLEM_CAPTURING_IMAGE_EXCEPTION : -29,
+		ERROR_RETRIEVING_CURRENT_LOCATION : -30,
+		DB_SQLITE_INIT_ERROR : -31,
+		FILE_UNZIP_ERROR : -32,
+		FILE_ZIP_ERROR : -33,
+		DB_OPEN_ERROR : -34,
+		DB_QUERY_EXEC_ERROR : -35,
+		DB_READ_QUERY_EXEC_ERROR : -36,
+		DB_TABLE_NOT_EXIST_ERROR : -37,
+		DB_CLOSE_ERROR : -38,
+		INVALID_SERVICE_REQUEST_ERROR: -39,
+		INVALID_JSON_REQUEST: -40,
+		LOCATION_ERROR_GPS_NETWORK_DISABLED : -41,
+		LOCATION_ERROR_PLAY_SERVICE_NOT_AVAILABLE : -42,
+		NOTIFIER_REQUEST_INVALID : -43,
+		NOTIFIER_REQUEST_ERROR : -44,
+
+		// EXCEPTION MESSAGE
+		NETWORK_NOT_REACHABLE_EXCEPTION_MESSAGE : "Network not reachable",
+		UNABLE_TO_PROCESS_MESSAGE : "Unable to process request",
+		UNKNOWN_CURRENT_LOCATION_EXCEPTION_MESSAGE : "Could not get current location",
+		JSON_PARSE_EXCEPTION_MESSAGE : "Unable to parse JSON",
+		HARDWARE_CAMERA_IN_USE_EXCEPTION_MESSAGE : "Camera already in use",
+		PROBLEM_CAPTURING_IMAGE_EXCEPTION_MESSAGE : "Problem capturing image from camera",
+		ERROR_RETRIEVING_CURRENT_LOCATION_MESSAGE : "Unable to retrieve current location",
+		ERROR_DELETE_DATA_PERSISTENCE_MESSAGE : "Problem deleting data from persistence store",
+		ERROR_RETRIEVE_DATA_PERSISTENCE_MESSAGE : "Problem retrieving data from persistence store",
+		ERROR_SAVE_DATA_PERSISTENCE_MESSAGE : "Problem saving data to persistence store",
+		DB_OPERATION_ERROR_MESSAGE : "Problem performing database operation",
+		FILE_UNZIP_ERROR_MESSAGE : "Unable to extract the archive file.",	
+		INVALID_SERVICE_REQUEST_ERROR_MESSAGE: "Invalid Service Request. Make sure that you have provided all the required parameters in the request.",
+		LOCATION_ERROR_GPS_NETWORK_DISABLED_MESSAGE : "Could not fetch the location.GPS radio or Network disabled",
+		LOCATION_ERROR_PLAY_SERVICE_NOT_AVAILABLE_MESSAGE : "Google Play Service not available on the device or is out of date",
+		NOTIFIER_REQUEST_INVALID_MESSAGE : "Notifier request invalid.",
+		NOTIFIER_REQUEST_ERROR_MESSAGE : "Error processing notifier request",
+		//----------------------------------------------
+		
+		//Request Object JSON properties
+		MMI_MESSAGE_PROP_TRANSACTION_ID : "transactionId",
+		MMI_MESSAGE_PROP_RESPONSE_EXPECTED : "isResponseExpected",
+		MMI_MESSAGE_PROP_TRANSACTION_REQUEST : "transactionRequest",
+		MMI_MESSAGE_PROP_REQUEST_OPERATION_ID : "serviceOperationId",
+		MMI_MESSAGE_PROP_REQUEST_DATA : "serviceRequestData",
+		MMI_MESSAGE_PROP_TRANSACTION_RESPONSE : "transactionResponse",
+		MMI_MESSAGE_PROP_TRANSACTION_OP_COMPLETE : "isOperationComplete",
+		MMI_MESSAGE_PROP_SERVICE_RESPONSE : "serviceResponse",
+		MMI_MESSAGE_PROP_RESPONSE_EX_TYPE : "exceptionType",
+		MMI_MESSAGE_PROP_RESPONSE_EX_MESSAGE : "exceptionMessage",
+		
+		//Service Request object properties
+		MMI_REQUEST_PROP_SERVICE_SHUTDOWN : "serviceShutdown",
+		//UI service request
+		MMI_REQUEST_PROP_MESSAGE : "message",
+		MMI_REQUEST_PROP_BUTTON_TEXT : "buttonText",
+		MMI_REQUEST_PROP_POSITIVE_BTN_TEXT : "positiveBtnText",
+		MMI_REQUEST_PROP_NEGATIVE_BTN_TEXT : "negativeBtnText",
+		MMI_REQUEST_PROP_ITEM : "item",
+		//HTTP service request
+		MMI_REQUEST_PROP_REQ_METHOD : "requestMethod",
+		MMI_REQUEST_PROP_REQ_URL : "requestUrl",
+		MMI_REQUEST_PROP_REQ_HEADER_INFO : "requestHeaderInfo",
+		MMI_REQUEST_PROP_REQ_POST_BODY : "requestPostBody",
+		MMI_REQUEST_PROP_REQ_CONTENT_TYPE : "requestContentType",
+		MMI_REQUEST_PROP_REQ_FILE_INFO : "requestFileInformation",
+		MMI_REQUEST_PROP_REQ_FILE_TO_SAVE_NAME : "requestFileNameToSave",
+		MMI_REQUEST_PROP_REQ_SERVER_PROXY : "serverProxyAddress",
+		MMI_REQUEST_PROP_HTTP_HEADER_KEY : "headerKey",
+		MMI_REQUEST_PROP_HTTP_HEADER_VALUE : "headerValue",
+		//Persistence service request
+		MMI_REQUEST_PROP_STORE_NAME : "storeName",
+		MMI_REQUEST_PROP_PERSIST_REQ_DATA : "requestData",
+		MMI_REQUEST_PROP_PERSIST_KEY : "key",
+		MMI_REQUEST_PROP_PERSIST_VALUE : "value",
+		//Database service request
+		MMI_REQUEST_PROP_APP_DB : "appDB",
+		MMI_REQUEST_PROP_QUERY_REQUEST : "queryRequest",
+		MMI_REQUEST_PROP_SHOULD_ENCRYPT_DB : "shouldEncrypt",
+		//Map service request
+		MMI_REQUEST_PROP_LOCATIONS : "locations",
+		MMI_REQUEST_PROP_LEGENDS : "legends",
+		MMI_REQUEST_PROP_LOC_LATITUDE : "locLatitude",
+		MMI_REQUEST_PROP_LOC_LONGITUDE : "locLongitude",
+		MMI_REQUEST_PROP_LOC_MARKER : "locMarkerPin",
+		MMI_REQUEST_PROP_LOC_TITLE : "locTitle",
+		MMI_REQUEST_PROP_LOC_DESCRIPTION : "locDescription",
+		MMI_REQUEST_PROP_ANIMATION_TYPE : "mapAnimationType",
+		MMI_REQUEST_PROP_MAP_DIV : "mapDiv",
+		MMI_REQUEST_PROP_DIRECTION_DIV : "directionsDiv",
+		//File read service
+		MMI_REQUEST_PROP_FILE_TO_READ_NAME : "fileName",
+		//Camera service
+		MMI_REQUEST_PROP_CAMERA_DIR : "cameraDirection",
+		MMI_REQUEST_PROP_IMG_COMPRESSION : "imageCompressionLevel",
+		MMI_REQUEST_PROP_IMG_ENCODING : "imageEncoding",
+		MMI_REQUEST_PROP_IMG_RETURN_TYPE : "imageReturnType",
+		MMI_REQUEST_PROP_IMG_FILTER : "imageFilter",
+		MMI_REQUEST_PROP_IMG_SRC : "imageSource",
+		//Location service
+		MMI_REQUEST_PROP_LOC_ACCURACY : "locAccuracy",
+		MMI_REQUEST_PROP_LOCATION_TIMEOUT : "locTimeout",
+		MMI_REQUEST_PROP_LOCATION_LASTKNOWN : "locLastKnown",
+		MMI_REQUEST_PROP_LOCATION_LOADING_MESSAGE : "loadingMessage",
+		// Signature service
+		MMI_REQUEST_PROP_SIGN_PENCOLOR : "signPenColor",
+		MMI_REQUEST_PROP_SIGN_IMG_SAVEFORMAT : "signImageSaveFormat",
+		//----------------------------------------
+		
+								//Service Response object properties
+		
+		//UI service response
+		MMI_RESPONSE_PROP_USER_SELECTION : "userSelection",
+		MMI_RESPONSE_PROP_USER_SELECTED_INDEX : "selectedIndex",
+		//HTTP service response
+		MMI_RESPONSE_PROP_HTTP_RESPONSE_HEADERS : "httpResponseHeaders",
+		MMI_RESPONSE_PROP_HTTP_RESPONSE : "httpResponse",
+		MMI_RESPONSE_PROP_HTTP_HEADER_NAME : "headerName",
+		MMI_RESPONSE_PROP_HTTP_HEADER_VALUE : "headerValue",
+		//Persistence service response
+		MMI_RESPONSE_PROP_STORE_NAME : "storeName",
+		MMI_RESPONSE_PROP_STORE_RETURN_DATA : "storeReturnData",
+		MMI_RESPONSE_PROP_STORE_KEY : "key",
+		MMI_RESPONSE_PROP_STORE_VALUE : "value",
+		//Database service response
+		MMI_RESPONSE_PROP_APP_DB : "appDB",
+		MMI_RESPONSE_PROP_DB_RECORDS : "dbRecords",
+		MMI_RESPONSE_PROP_DB_ATTRIBUTE : "dbAttribute",
+		MMI_RESPONSE_PROP_DB_ATTR_VALUE : "dbAttrValue",
+		//Map service response
+		//File Read service response
+		MMI_RESPONSE_PROP_FILE_CONTENTS : "fileContents",
+		MMI_RESPONSE_PROP_FILE_NAME : "fileName",
+		MMI_RESPONSE_PROP_FILE_CONTENT : "fileContent",
+		MMI_RESPONSE_PROP_FILE_TYPE : "fileType",
+		MMI_RESPONSE_PROP_FILE_SIZE : "fileSize",
+		MMI_RESPONSE_PROP_FILE_UNARCHIVE_LOCATION : "fileUnarchiveLocation",
+		//Camera service response
+		MMI_RESPONSE_PROP_IMAGE_URL : "imageURL",
+		MMI_RESPONSE_PROP_IMAGE_DATA : "imageData",
+		MMI_RESPONSE_PROP_IMAGE_TYPE : "imageType",
+		//Signature service response
+		MMI_RESPONSE_PROP_SIGN_IMAGE_URL : "signImageUrl",
+		MMI_RESPONSE_PROP_SIGN_IMAGE_DATA : "signImageData",
+		MMI_RESPONSE_PROP_SIGN_IMAGE_TYPE : "signImageType",
+		//----------------------------------------
+			
+		//Generic constants
+		RESPONSE_JSON_PROP_DATA : "data",
+		//UI service
+		USER_SELECTION_YES : "0",
+		USER_SELECTION_NO : "1",
+		USER_SELECTION_OK : "2",
+		//Camera service
+		CAM_PROPERTY_CAPTURE_TYPE : 'source',
+		CAM_PROPERTY_IMAGE_QUALITY : 'quality',
+		CAM_PROPERTY_IMG_RETURN_METHOD : 'returnType',
+		CAM_PROPERTY_IMAGE_TYPE : 'encoding',
+		CAM_PROPERTY_IMAGE_FORMAT : 'filter',
+		CAM_PROPERTY_CAMERA_DIR : 'direction',
+		IMAGE_URL : 'IMAGE_URL',
+		IMAGE_DATA : 'IMAGE_DATA',
+		STANDARD : 'STANDARD',
+		MONOCHROME : 'MONOCHROME',
+		SEPIA : 'SEPIA',
+		IMAGE_JPEG : 'jpg',
+		IMAGE_PNG : 'png',
+		CAMERA_FRONT :'CAMERA_FRONT',
+		CAMERA_BACK : 'CAMERA_BACK',
+		//Map service related constants
+		MAP_ANIMATION_CURL :206 ,
+		MAP_ANIMATION_FLIP :204,
+		
+		//Database service
+		DEFAULT_APP_NAME : 'appez',
+		//Map service
+		IS_MAP_CONTROLLER_INIT : false,
+		MAP_DIRECTION_API_URL : "http://maps.google.com/maps/api/directions/json?origin={ORIGIN_LATITUDE},{ORIGIN_LONGITUDE}&destination={DESTINATION_LATITUDE},{DESTINATION_LONGITUDE}&sensor=false",
+		//Location service
+		LOCATION_ACCURACY_COARSE : 'coarse',
+		LOCATION_ACCURACY_FINE : 'fine',
+		
+		
+		//Constants related to Notifier
+		NOTIFIER_PROP_TRANSACTION_ID : "transactionId",
+		NOTIFIER_PROP_TRANSACTION_REQUEST : "notifierTransactionRequest",
+		NOTIFIER_REQUEST_PROP_CALLBACK_FUNC : "notifierCallback",
+		NOTIFIER_TYPE : "notifierType",
+		NOTIFIER_ACTION_TYPE : "notifierActionType",
+		NOTIFIER_REQUEST_DATA : "notifierRequestData",
+		NOTIFIER_PROP_TRANSACTION_RESPONSE : "notifierTransactionResponse",
+		NOTIFIER_EVENT_RESPONSE : "notifierEventResponse",
+		NOTIFIER_OPERATION_ERROR_TYPE : "notifierErrorType",
+		NOTIFIER_OPERATION_ERROR : "notifierError",
+		NOTIFIER_OPERATION_IS_SUCCESS : "isOperationSuccess",
+		
+		//Push notifier constants
+		NOTIFIER_PUSH_PROP_GCM_SERVER_URL : "gcmServerUrl",
+		NOTIFIER_PUSH_PROP_GCM_SENDER_ID : "gcmSenderId",
+		NOTIFIER_PUSH_PROP_ANDROID_TARGET_ACTIVITY_FG : "androidNotificationTargetActivityFg",
+		NOTIFIER_PUSH_PROP_ANDROID_TARGET_ACTIVITY_BG : "androidNotificationTargetActivityBg",
+		NOTIFIER_PUSH_PROP_SERVER_URL : "pushServerUrl",
+		NOTIFIER_PUSH_PROP_LOADING_MESSAGE : "loadingMessage",
+			
+		//Standard response properties	
+		NOTIFIER_PUSH_PROP_MESSAGE : "notifierPushMessage",
+
+		NOTIFIER_RESP_NWSTATE_WIFI_CONNECTED : "wifiConnected",
+		NOTIFIER_RESP_NWSTATE_CELLULAR_CONNECTED : "cellularConnected",
+		NOTIFIER_RESP_NWSTATE_CONNECTED : "networkConnected"
+			
+		//---------------------------------------
+}

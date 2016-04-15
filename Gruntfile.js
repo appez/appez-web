@@ -196,5 +196,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('build-uic', ['clean','useminPrepare','concat', 'uglify','cssmin:minify','copy:uic','copy:uicmin']);
 	grunt.registerTask('default', ['clean','useminPrepare','concat', 'uglify','copy:minjs']);
 	grunt.registerTask('test',['connect','qunit']);
+	grunt.registerTask('ci-appez',['ci-mmi','ci-smartweb','ci-uic']);
 
 };
